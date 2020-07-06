@@ -1,5 +1,5 @@
 Calculator = function (){
-    this.Value = 0;
+    this.value = 0;
 }
 
 Calculator.prototype.add = function(number){
