@@ -1,78 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!--meta tags for best user experience-->
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!--Bootstrap CSS Library-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	
-    <!--Favicon link-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <!--My CSS file-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!--title-->
-    <title>Saucy Sauce</title>
-
-<!--Load Jasmine Framework-->
-    <!--Jasmine JS testing framework-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.js" integrity="sha512-PAOFqlhbgGVh70gKb5RfTLLVmEFnh5jO75xrEMjT8mzspI+Wl4PKqEDGx4x4/EwgFHe8nlKCAGUwisHZXOtQ8g==" crossorigin="anonymous"></script>
-
-    <!--Jamsine-HTML.js file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.js" integrity="sha512-noNmiAb9mmW56srU8iRSdFsAYTAMYCjRk+bH8T3iTOvUlJrmCZCf3aLZcpwAPH1wZ/Vkrehf+WNnFV4Qu29KLQ==" crossorigin="anonymous"></script>
-
-    <!--Jasmine boot.js file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.js" integrity="sha512-2shpoK9lnpDGymLugeKOQ48e5sL452343YLO9z1KLiFHop0ZuzqiG69i1X/UV9hd4UzVmCOBHxlRyFBmXGRyUw==" crossorigin="anonymous"></script>
-   
-    <!--Jamsine CSS testing framework-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.css" integrity="sha512-XKXP02aeSNI5HsDB3+4MM0tSDXJTBFZpt99xL7PvMz3+A3aRy0F0Ne/CATK+Z72ckE/4Ev9OiosWQr5LtU284Q==" crossorigin="anonymous" />
-
-<!--Load Scripts-->
-    <script src="assets/scripts/calc.js"></script>
-    <script src="assets/scripts/drink.js"></script>
-    <script src="assets/scripts/buzz.js"></script>
-
-<!--Load Tests-->
-    <script src="spec/calcSpec.js"></script>
-    <script src="spec/drinkSpec.js"></script>
-    <script src="spec/buzzSpec.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Hello</title>
+    <style type="text/css">
+        .container {
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-
-<!--Bootstrap Navigation bar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Nav</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <article id="home-page">
+            <section class="jumbotron">
+                <h1>The DOM</h1>
+                <p>The good, the bad and the ugly.</p>
+            </section>
+            <section class="content">
+                <p class="lead">Manipulating the DOM with Javascript.</p>
+            </section>
+        </article>
+    </div>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
-
-<!--External Bootstrap, JavaScript Library-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-<!--Link to my JavaScript file-->
-<script src="assets/scripts/script.js"></script>
 
 </html>
